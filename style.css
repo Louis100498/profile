@@ -1,0 +1,165 @@
+/* Import modern fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap");
+
+/* General Styles */
+body {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Grand-Place_de_Bruxelles_en_heure_bleue.jpg/1024px-Grand-Place_de_Bruxelles_en_heure_bleue.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  backdrop-filter: blur(4px);
+}
+
+/* Main Container */
+.container {
+  width: 90%;
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  background: rgba(15, 23, 42, 0.85); /* Dark navy with subtle transparency */
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(173, 216, 230, 0.2); /* Soft ice-blue glow */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(173, 216, 230, 0.4); /* Slight glow on hover */
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  color: #b0c4de; /* Soft silver-blue */
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #a9cce3; /* Lighter icy blue */
+}
+
+/* Profile Image */
+.img-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px 0;
+  border: 4px solid #a9cce3;
+  transition: border-color 0.3s ease, transform 0.2s;
+}
+
+.img-circle:hover {
+  border-color: #b0c4de;
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #4169e1, #5f9ea0);
+  color: #f8f9fa;
+  border-radius: 50px;
+  margin-top: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #5f9ea0, #4169e1);
+  transform: scale(1.05);
+}
+
+/* Social Media Icons */
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.list-inline li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.list-inline a {
+  color: #a9cce3;
+  font-size: 40px;
+  transition: color 0.3s ease, transform 0.2s;
+}
+
+.list-inline a:hover {
+  color: #b0c4de;
+  transform: scale(1.1);
+}
+
+/* Interests List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-weight: 600;
+  color: #d3d3d3;
+}
+
+ul li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 100%;
+  }
+  .card {
+    padding: 25px;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 540px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .img-circle {
+    width: 130px;
+    height: 130px;
+  }
+  .list-inline a {
+    font-size: 30px;
+  }
+}
+
